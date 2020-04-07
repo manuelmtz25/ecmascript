@@ -15,17 +15,6 @@ function seRompeAsincrona(){
     }, 1000);
 }
 
-function seRompeAsincronaCallback(){
-    setTimeout(() => {
-        try{
-            return 3 + z
-        }catch(err){
-            console.log('Error en mi función asíncrona')            
-        }
-        
-    }, 1000);
-}
-
 function seRompeAsincronaCallback(cb){
     setTimeout(() => {
         try{
