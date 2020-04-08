@@ -139,12 +139,35 @@ let listOfNames = names.map(function (item) {
 });
 
 //es6
-let listOfNames2 = names.map(item => console.log(item.name));
+let listOfNames2 = names.map((item) => console.log(item.name));
 
-const listOfNames3=(name, age)=>{
+const listOfNames3 = (name, age) => {
   //Código de la función
+};
+
+const listOfNames4 = name => {
+  //Código de la función con un solo parámetro
+};
+
+const square = num => num * num;
+console.log(square(5))
+
+//Promesas
+
+const helloPromise=()=>{
+  return new Promise((resolve, reject)=>{
+    //Código: algo va a pasar...
+    if(true){
+      resolve('Todo bien')
+    }else{
+      reject('Algo salió mal')
+    }
+  });
 }
 
-const listOfNames4=name=>{
-  //Código de la función con un solo parámetro
-}
+//a una promesa le podemos agregar una gran cantidad de
+//elementos "then" en caso de que se quiera continuar haciendo algo
+helloPromise()
+  .then(response=>console.log(response))
+  .then(()=>console.log('hola'))
+  .catch(error=>console.log(error))
