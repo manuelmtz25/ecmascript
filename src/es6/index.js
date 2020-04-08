@@ -114,3 +114,14 @@ console.log(globalVar)
 
 const a='b';
 a='c' //no lo va a permitir
+
+//Parámetros en objetos
+let name='manuel'
+let age=32
+
+//antes
+obj ={name:name, age:age}
+console.log(obj)
+//es6
+obj2={name, age}
+console.log(obj2)
